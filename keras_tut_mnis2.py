@@ -1,5 +1,9 @@
 '''Trains a simple convnet on the MNIST dataset'''
 
+print("Hello World")
+raise Exception()
+
+
 import keras
 from keras.datasets import mnist
 from keras.models import Sequential

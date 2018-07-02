@@ -142,8 +142,12 @@ model.add(Dense(num_classes, activation="softmax"))
 #mehr transformationen
 #scikit learn
 #https://blog.keras.io/building-powerful-image-classification-models-using-very-little-data.html
+
+# initiate RMSprop optimizer
+opt = keras.optimizers.rmsprop(lr=0.0001, decay=1e-6)   # adadelta might work
+
 model.compile(loss=keras.losses.categorical_crossentropy,
-              optimizer=keras.optimizers.Adadelta(),
+              optimizer=opt,
               metrics=["accuracy"])
 
 # model = Sequential()
