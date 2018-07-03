@@ -1,0 +1,5 @@
+#excludes heavy folders with images from the repository
+.idea
+preview/
+raw_data/
+raw_data_color/
